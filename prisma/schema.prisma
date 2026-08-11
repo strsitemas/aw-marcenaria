@@ -1,0 +1,113 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum PapelUsuario {
+  ADMIN
+  EDITOR
+}
+
+model Usuario {
+  id        String        @id @default(cuid())
+  nome      String
+  email     String        @unique
+  senhaHash String
+  papel     PapelUsuario  @default(EDITOR)
+  ativo     Boolean       @default(true)
+  criadoEm  DateTime      @default(now())
+  atualizadoEm DateTime   @updatedAt
+}
+
+model Ambiente {
+  id          String    @id @default(cuid())
+  titulo      String
+  slug        String    @unique
+  descricao   String
+  imagemCapa  String
+  ordem       Int       @default(0)
+  publicado   Boolean   @default(true)
+  criadoEm    DateTime  @default(now())
+  atualizadoEm DateTime @updatedAt
+}
+
+model ProjetoPortfolio {
+  id           String    @id @default(cuid())
+  titulo       String
+  slug         String    @unique
+  descricao    String
+  categoria    String
+  imagemCapa   String
+  imagensGaleria String[]
+  destaque     Boolean   @default(false)
+  publicado    Boolean   @default(true)
+  criadoEm     DateTime  @default(now())
+  atualizadoEm DateTime  @updatedAt
+}
+model Depoimento {
+  id           String    @id @default(cuid())
+  nomeCliente  String
+  texto        String
+  notaEstrelas Int       @default(5)
+  videoUrl     String?
+  publicado    Boolean   @default(true)
+  criadoEm     DateTime  @default(now())
+}
+
+model PostBlog {
+  id            String    @id @default(cuid())
+  titulo        String
+  slug          String    @unique
+  resumo        String
+  conteudo      String
+  imagemCapa    String
+  metaTitulo    String?
+  metaDescricao String?
+  publicado     Boolean   @default(false)
+  publicadoEm   DateTime?
+  criadoEm      DateTime  @default(now())
+  atualizadoEm  DateTime  @updatedAt
+}
+model Banner {
+  id        String   @id @default(cuid())
+  titulo    String
+  subtitulo String?
+  imagem    String
+  linkBotao String?
+  textoBotao String?
+  ordem     Int      @default(0)
+  ativo     Boolean  @default(true)
+}
+
+model FaqItem {
+  id        String   @id @default(cuid())
+  pergunta  String
+  resposta  String
+  ordem     Int      @default(0)
+  publicado Boolean  @default(true)
+}
+
+enum StatusLead {
+  NOVO
+  EM_CONTATO
+  ORCAMENTO_ENVIADO
+  FECHADO
+  PERDIDO
+}
+
+model Lead {
+  id           String     @id @default(cuid())
+  nome         String
+  telefone     String
+  email        String?
+  mensagem     String?
+  ambienteInteresse String?
+  origem       String     @default("site")
+  status       StatusLead @default(NOVO)
+  criadoEm     DateTime   @default(now())
+  atualizadoEm DateTime   @updatedAt
+}
