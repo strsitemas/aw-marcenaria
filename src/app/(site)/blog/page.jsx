@@ -8,6 +8,8 @@ export const metadata = {
     "Artigos sobre marcenaria planejada, design de interiores, materiais e tendencias.",
 };
 
+export const dynamic = "force-dynamic";
+
 export default async function BlogPage() {
   const posts = await prisma.postBlog.findMany({
     where: { publicado: true },

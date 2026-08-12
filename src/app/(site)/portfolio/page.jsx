@@ -6,6 +6,8 @@ export const metadata = {
     "Confira projetos de marcenaria planejada de alto padrao ja entregues pela AW Marcenaria.",
 };
 
+export const dynamic = "force-dynamic";
+
 export default function PortfolioPage() {
   return (
     <div className="pt-20">

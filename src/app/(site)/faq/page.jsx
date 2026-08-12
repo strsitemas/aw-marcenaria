@@ -6,6 +6,8 @@ export const metadata = {
     "Tire suas duvidas sobre prazos, garantia, materiais e o processo de marcenaria planejada da AW Marcenaria.",
 };
 
+export const dynamic = "force-dynamic";
+
 export default function FaqPage() {
   return (
     <div className="pt-20">

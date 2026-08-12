@@ -26,6 +26,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
+export const dynamic = "force-dynamic";
+
 export default async function PostBlogPage({ params }) {
   const { slug } = await params;
   const post = await prisma.postBlog.findUnique({ where: { slug } });

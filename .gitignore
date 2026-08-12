@@ -34,3 +34,8 @@ senhas.txt
 prompt mestre.txt
 contexto*.txt
 CONTEXTO_PROJETO_AW_MARCENARIA.md
+.vercel
+
+fix_dynamic.ps1
+
+dados.sql
