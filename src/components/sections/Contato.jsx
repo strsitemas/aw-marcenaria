@@ -94,10 +94,14 @@ export default function Contato() {
             className="flex flex-col gap-5"
           >
             <div>
-              <label className="font-texto text-sm text-preto-fosco block mb-1">
+              <label
+                htmlFor="contato-nome"
+                className="font-texto text-sm text-preto-fosco block mb-1"
+              >
                 Nome completo *
               </label>
               <input
+                id="contato-nome"
                 type="text"
                 {...register("nome")}
                 className="w-full rounded-md border border-madeira/30 bg-white px-4 py-3 font-texto text-preto-fosco focus:outline-none focus:border-dourado"
@@ -110,10 +114,14 @@ export default function Contato() {
             </div>
 
             <div>
-              <label className="font-texto text-sm text-preto-fosco block mb-1">
+              <label
+                htmlFor="contato-telefone"
+                className="font-texto text-sm text-preto-fosco block mb-1"
+              >
                 Telefone / WhatsApp *
               </label>
               <input
+                id="contato-telefone"
                 type="tel"
                 placeholder="(11) 99999-9999"
                 {...register("telefone")}
@@ -127,10 +135,14 @@ export default function Contato() {
             </div>
 
             <div>
-              <label className="font-texto text-sm text-preto-fosco block mb-1">
+              <label
+                htmlFor="contato-email"
+                className="font-texto text-sm text-preto-fosco block mb-1"
+              >
                 E-mail
               </label>
               <input
+                id="contato-email"
                 type="email"
                 {...register("email")}
                 className="w-full rounded-md border border-madeira/30 bg-white px-4 py-3 font-texto text-preto-fosco focus:outline-none focus:border-dourado"
@@ -143,10 +155,14 @@ export default function Contato() {
             </div>
 
             <div>
-              <label className="font-texto text-sm text-preto-fosco block mb-1">
+              <label
+                htmlFor="contato-ambiente"
+                className="font-texto text-sm text-preto-fosco block mb-1"
+              >
                 Ambiente de interesse
               </label>
               <select
+                id="contato-ambiente"
                 {...register("ambienteInteresse")}
                 className="w-full rounded-md border border-madeira/30 bg-white px-4 py-3 font-texto text-preto-fosco focus:outline-none focus:border-dourado"
               >
@@ -160,10 +176,14 @@ export default function Contato() {
             </div>
 
             <div>
-              <label className="font-texto text-sm text-preto-fosco block mb-1">
+              <label
+                htmlFor="contato-mensagem"
+                className="font-texto text-sm text-preto-fosco block mb-1"
+              >
                 Mensagem
               </label>
               <textarea
+                id="contato-mensagem"
                 rows={4}
                 {...register("mensagem")}
                 className="w-full rounded-md border border-madeira/30 bg-white px-4 py-3 font-texto text-preto-fosco focus:outline-none focus:border-dourado"
