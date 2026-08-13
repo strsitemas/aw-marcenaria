@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const OPCOES = [
   { valor: "NOVO", rotulo: "Novo" },
   { valor: "EM_CONTATO", rotulo: "Em contato" },
-  { valor: "ORCAMENTO_ENVIADO", rotulo: "Orcamento enviado" },
+  { valor: "ORCAMENTO_ENVIADO", rotulo: "Orçamento enviado" },
   { valor: "FECHADO", rotulo: "Fechado (arquivar)" },
   { valor: "PERDIDO", rotulo: "Perdido (arquivar)" },
 ];

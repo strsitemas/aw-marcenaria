@@ -8,7 +8,7 @@ export async function generateMetadata({ params }) {
   const post = await prisma.postBlog.findUnique({ where: { slug } });
 
   if (!post || !post.publicado) {
-    return { title: "Post nao encontrado" };
+    return { title: "Post não encontrado" };
   }
 
   const titulo = post.metaTitulo || post.titulo;
@@ -44,7 +44,7 @@ export default async function PostBlogPage({ params }) {
     dateModified: post.atualizadoEm,
     author: {
       "@type": "Organization",
-      name: "AW Marcenaria e Moveis Planejados",
+      name: "AW Marcenaria e Móveis Planejados",
     },
   };
 
@@ -100,7 +100,7 @@ export default async function PostBlogPage({ params }) {
 
         <div className="mt-16 pt-8 border-t border-dourado/10 text-center">
           <p className="font-texto text-bege mb-4">
-            Gostou? Vamos criar um ambiente assim para voce.
+            Gostou? Vamos criar um ambiente assim para você.
           </p>
           <Link
             href="/#contato"

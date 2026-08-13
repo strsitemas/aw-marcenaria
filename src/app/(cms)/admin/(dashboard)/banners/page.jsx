@@ -32,7 +32,7 @@ export default async function BannersListPage() {
                   Titulo
                 </th>
                 <th className="font-texto text-xs uppercase text-madeira px-4 py-3">
-                  Botao
+                  Botão
                 </th>
                 <th className="font-texto text-xs uppercase text-madeira px-4 py-3">
                   Ordem

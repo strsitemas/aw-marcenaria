@@ -48,7 +48,7 @@ export default function FaqForm({ faq }) {
       router.push("/admin/faq");
       router.refresh();
     } catch (error) {
-      setErro("Nao foi possivel salvar. Tente novamente.");
+      setErro("Não foi possivel salvar. Tente novamente.");
     }
   }
 

@@ -32,15 +32,15 @@ export default function Sobre() {
             id="sobre-titulo"
             className="font-titulo text-3xl md:text-4xl text-preto-fosco leading-tight"
           >
-            Onde a precisao encontra a elegancia, criando ambientes para geracoes.
+            Onde a precisão encontra a elegância, criando ambientes para gerações.
           </h2>
 
           <p className="font-texto text-madeira text-base md:text-lg leading-relaxed">
-            Ha mais de uma decada, a AW Marcenaria transforma projetos em moveis planejados de alto padrao, combinando madeiras nobres, acabamento impecavel e um processo artesanal que valoriza cada detalhe, criando ambientes unicos e atemporais.
+            Ha mais de uma década, a AW Marcenaria transforma projetos em móveis planejados de alto padrão, combinando madeiras nobres, acabamento impecável e um processo artesanal que valoriza cada detalhe, criando ambientes únicos e atemporais.
           </p>
 
           <p className="font-texto text-madeira/90 text-base md:text-lg leading-relaxed">
-            Do primeiro esboco a instalacao final, cada projeto e desenvolvido sob medida, unindo precisao, sofisticacao e excelencia artesanal. O resultado sao ambientes funcionais, duraveis e com uma estetica atemporal, criados para valorizar cada espaco e refletir a personalidade de seus clientes.
+            Do primeiro esboço a instalação final, cada projeto e desenvolvido sob medida, unindo precisão, sofisticação e excelência artesanal. O resultado são ambientes funcionais, duráveis e com uma estética atemporal, criados para valorizar cada espaço e refletir a personalidade de seus clientes.
           </p>
 
           <a

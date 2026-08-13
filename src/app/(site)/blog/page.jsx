@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Blog | AW Marcenaria e Moveis Planejados",
+  title: "Blog | AW Marcenaria e Móveis Planejados",
   description:
-    "Artigos sobre marcenaria planejada, design de interiores, materiais e tendencias.",
+    "Artigos sobre marcenaria planejada, design de interiores, materiais e tendências.",
 };
 
 export const dynamic = "force-dynamic";
@@ -23,7 +23,7 @@ export default async function BlogPage() {
           Blog
         </p>
         <h1 className="font-titulo text-4xl md:text-5xl text-branco-gelo text-center mb-16">
-          Ideias, materiais e tendencias
+          Ideias, materiais e tendências
         </h1>
 
         {posts.length === 0 ? (

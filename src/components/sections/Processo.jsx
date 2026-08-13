@@ -3,7 +3,7 @@ const PASSOS = [
     numero: "01",
     titulo: "Consultoria",
     descricao:
-      "Entendemos seu estilo, necessidades e espaco em uma conversa inicial sem compromisso.",
+      "Entendemos seu estilo, necessidades e espaço em uma conversa inicial sem compromisso.",
   },
   {
     numero: "02",
@@ -13,27 +13,27 @@ const PASSOS = [
   },
   {
     numero: "03",
-    titulo: "Aprovacao",
+    titulo: "Aprovação",
     descricao:
-      "Voce revisa cada detalhe, ajusta o quanto quiser, e aprova a versao final.",
+      "Você revisa cada detalhe, ajusta o quanto quiser, e aprova a versao final.",
   },
   {
     numero: "04",
-    titulo: "Producao",
+    titulo: "Produção",
     descricao:
       "Fabricamos com materiais premium e ferragens de primeira linha em nossa marcenaria.",
   },
   {
     numero: "05",
-    titulo: "Instalacao",
+    titulo: "Instalação",
     descricao:
-      "Equipe especializada realiza a instalacao com precisao e cuidado no seu espaco.",
+      "Equipe especializada realiza a instalação com precisão e cuidado no seu espaço.",
   },
   {
     numero: "06",
     titulo: "Entrega",
     descricao:
-      "Voce recebe o ambiente pronto, com garantia e suporte pos-venda.",
+      "Você recebe o ambiente pronto, com garantia e suporte pos-venda.",
   },
 ];
 

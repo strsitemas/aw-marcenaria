@@ -1,9 +1,9 @@
 import Portfolio from "@/components/sections/Portfolio";
 
 export const metadata = {
-  title: "Portfolio | AW Marcenaria e Moveis Planejados",
+  title: "Portfólio | AW Marcenaria e Móveis Planejados",
   description:
-    "Confira projetos de marcenaria planejada de alto padrao ja entregues pela AW Marcenaria.",
+    "Confira projetos de marcenaria planejada de alto padrão já entregues pela AW Marcenaria.",
 };
 
 export const dynamic = "force-dynamic";

@@ -20,7 +20,7 @@ export default async function Portfolio() {
             id="portfolio-titulo"
             className="font-titulo text-3xl md:text-4xl text-preto-fosco leading-tight mt-4"
           >
-            Projetos que ja entregamos
+            Projetos que já entregamos
           </h2>
         </div>
         <PortfolioGaleria projetos={projetos} />

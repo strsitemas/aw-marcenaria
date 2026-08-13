@@ -1,7 +1,7 @@
 import Contato from "@/components/sections/Contato";
 
 export const metadata = {
-  title: "Contato | AW Marcenaria e Moveis Planejados",
+  title: "Contato | AW Marcenaria e Móveis Planejados",
   description:
     "Fale com a AW Marcenaria e solicite um projeto sob medida para o seu ambiente.",
 };

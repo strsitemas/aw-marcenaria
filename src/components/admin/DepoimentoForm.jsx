@@ -9,7 +9,7 @@ import { z } from "zod";
 const depoimentoSchema = z.object({
   nomeCliente: z.string().min(2, "Informe o nome do cliente"),
   texto: z.string().min(5, "Informe o depoimento"),
-  notaEstrelas: z.coerce.number().int().min(1, "Nota minima 1").max(5, "Nota maxima 5").default(5),
+  notaEstrelas: z.coerce.number().int().min(1, "Nota minima 1").max(5, "Nota máxima 5").default(5),
   videoUrl: z.string().optional().or(z.literal("")),
   publicado: z.boolean().default(true),
 });
@@ -52,7 +52,7 @@ export default function DepoimentoForm({ depoimento }) {
       router.push("/admin/depoimentos");
       router.refresh();
     } catch (error) {
-      setErro("Nao foi possivel salvar. Tente novamente.");
+      setErro("Não foi possivel salvar. Tente novamente.");
     }
   }
 

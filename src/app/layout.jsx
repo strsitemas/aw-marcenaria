@@ -14,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "AW Marcenaria e Moveis Planejados",
-  description: "Marcenaria e moveis planejados de alto padrao",
+  title: "AW Marcenaria e Móveis Planejados",
+  description: "Marcenaria e móveis planejados de alto padrão",
 };
 
 export default function RootLayout({ children }) {

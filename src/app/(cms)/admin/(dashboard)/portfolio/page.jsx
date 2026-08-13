@@ -10,7 +10,7 @@ export default async function PortfolioListPage() {
   return (
     <div>
       <div className="flex items-center justify-between mb-6">
-        <h1 className="font-titulo text-2xl text-preto-fosco">Portfolio</h1>
+        <h1 className="font-titulo text-2xl text-preto-fosco">Portfólio</h1>
         <Link
           href="/admin/portfolio/novo"
           className="rounded-md bg-dourado text-preto-fosco font-texto font-semibold px-5 py-2 hover:bg-dourado-claro transition"

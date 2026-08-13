@@ -1,7 +1,7 @@
 import Faq from "@/components/sections/Faq";
 
 export const metadata = {
-  title: "Perguntas Frequentes | AW Marcenaria e Moveis Planejados",
+  title: "Perguntas Frequentes | AW Marcenaria e Móveis Planejados",
   description:
     "Tire suas duvidas sobre prazos, garantia, materiais e o processo de marcenaria planejada da AW Marcenaria.",
 };

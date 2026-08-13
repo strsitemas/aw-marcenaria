@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
 const bannerSchema = z.object({
-  titulo: z.string().min(2, "Informe o titulo"),
+  titulo: z.string().min(2, "Informe o título"),
   subtitulo: z.string().optional().or(z.literal("")),
   imagem: z.string().min(1, "Informe o caminho da imagem"),
   linkBotao: z.string().optional().or(z.literal("")),
@@ -54,7 +54,7 @@ export default function BannerForm({ banner }) {
       router.push("/admin/banners");
       router.refresh();
     } catch (error) {
-      setErro("Nao foi possivel salvar. Tente novamente.");
+      setErro("Não foi possivel salvar. Tente novamente.");
     }
   }
 
@@ -103,7 +103,7 @@ export default function BannerForm({ banner }) {
         />
         <p className="text-xs text-madeira/70 mt-1">
           Copie a foto para public/images/banners/ e informe o caminho aqui
-          (upload direto ainda nao esta disponivel).
+          (upload direto ainda não esta disponivel).
         </p>
         {errors.imagem && (
           <p className="text-sm text-red-700 mt-1">{errors.imagem.message}</p>

@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
 const postSchema = z.object({
-  titulo: z.string().min(3, "Informe o titulo"),
+  titulo: z.string().min(3, "Informe o título"),
   slug: z
     .string()
     .min(3, "Informe o slug")
@@ -85,7 +85,7 @@ export default function PostBlogForm({ post }) {
       router.push("/admin/blog");
       router.refresh();
     } catch (error) {
-      setErro(error.message || "Nao foi possivel salvar. Tente novamente.");
+      setErro(error.message || "Não foi possivel salvar. Tente novamente.");
     }
   }
 
@@ -111,7 +111,7 @@ export default function PostBlogForm({ post }) {
         </label>
         <input
           type="text"
-          placeholder="cuidados-com-moveis-planejados"
+          placeholder="cuidados-com-móveis-planejados"
           {...register("slug", {
             onChange: () => {
               slugEditadoManualmente.current = true;
@@ -137,7 +137,7 @@ export default function PostBlogForm({ post }) {
           className="w-full rounded-md border border-madeira/30 bg-white px-4 py-3 font-texto text-preto-fosco focus:outline-none focus:border-dourado"
         />
         <p className="text-xs text-madeira/70 mt-1">
-          Aparece na listagem do blog e como descricao padrao para buscadores se o Meta Descricao ficar em branco.
+          Aparece na listagem do blog e como descricao padrão para buscadores se o Meta Descricao ficar em branco.
         </p>
         {errors.resumo && (
           <p className="text-sm text-red-700 mt-1">{errors.resumo.message}</p>
@@ -170,7 +170,7 @@ export default function PostBlogForm({ post }) {
         />
         <p className="text-xs text-madeira/70 mt-1">
           Copie a foto para public/images/blog/ e informe o caminho aqui, sem o prefixo "public"
-          (upload direto ainda nao esta disponivel).
+          (upload direto ainda não esta disponivel).
         </p>
         {errors.imagemCapa && (
           <p className="text-sm text-red-700 mt-1">{errors.imagemCapa.message}</p>
@@ -188,7 +188,7 @@ export default function PostBlogForm({ post }) {
             </label>
             <input
               type="text"
-              placeholder="Deixe em branco para usar o titulo do post"
+              placeholder="Deixe em branco para usar o título do post"
               {...register("metaTitulo")}
               className="w-full rounded-md border border-madeira/30 bg-white px-4 py-3 font-texto text-preto-fosco focus:outline-none focus:border-dourado"
             />

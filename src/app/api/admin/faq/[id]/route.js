@@ -14,7 +14,7 @@ const faqSchema = z.object({
 export async function PUT(request, { params }) {
   const session = await getServerSession(authOptions);
   if (!session) {
-    return NextResponse.json({ erro: "Nao autorizado" }, { status: 401 });
+    return NextResponse.json({ erro: "Não autorizado" }, { status: 401 });
   }
 
   try {
@@ -41,7 +41,7 @@ export async function PUT(request, { params }) {
 export async function DELETE(request, { params }) {
   const session = await getServerSession(authOptions);
   if (!session) {
-    return NextResponse.json({ erro: "Nao autorizado" }, { status: 401 });
+    return NextResponse.json({ erro: "Não autorizado" }, { status: 401 });
   }
 
   try {

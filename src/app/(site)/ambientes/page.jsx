@@ -5,9 +5,9 @@ import { prisma } from "@/lib/prisma";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Ambientes | AW Marcenaria e Moveis Planejados",
+  title: "Ambientes | AW Marcenaria e Móveis Planejados",
   description:
-    "Conheca os ambientes projetados pela AW Marcenaria: cozinhas, closets, dormitorios, salas, home office e muito mais, com acabamento premium e projeto personalizado.",
+    "Conheça os ambientes projetados pela AW Marcenaria: cozinhas, closets, dormitórios, salas, home office e muito mais, com acabamento premium e projeto personalizado.",
 };
 
 export default async function AmbientesPage() {
@@ -22,12 +22,12 @@ export default async function AmbientesPage() {
           Nossos Ambientes
         </p>
         <h1 className="font-titulo text-4xl md:text-5xl text-branco-gelo text-center mb-6">
-          Cada espaco, um projeto exclusivo
+          Cada espaço, um projeto exclusivo
         </h1>
         <p className="font-texto text-bege text-center max-w-2xl mx-auto mb-16">
           Da cozinha ao closet, cada ambiente e pensado sob medida - com
-          consultoria de design, materiais premium e acabamento impecavel do
-          inicio ao fim.
+          consultoria de design, materiais premium e acabamento impecável do
+          início ao fim.
         </p>
 
         {ambientes.length === 0 ? (

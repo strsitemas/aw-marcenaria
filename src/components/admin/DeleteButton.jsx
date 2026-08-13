@@ -18,7 +18,7 @@ export default function DeleteButton({
       if (!resposta.ok) throw new Error("Falha ao excluir");
       router.refresh();
     } catch (error) {
-      alert("Nao foi possivel excluir. Tente novamente.");
+      alert("Não foi possivel excluir. Tente novamente.");
     } finally {
       setExcluindo(false);
     }

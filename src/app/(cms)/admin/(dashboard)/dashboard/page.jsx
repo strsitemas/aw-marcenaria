@@ -23,7 +23,7 @@ export default async function DashboardPage() {
       href: "/admin/ambientes",
     },
     {
-      titulo: "Projetos no Portfolio",
+      titulo: "Projetos no Portfólio",
       valor: totalPortfolio,
       href: "/admin/portfolio",
     },

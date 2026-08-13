@@ -9,7 +9,7 @@ const AMBIENTES = [
   {
     nome: "Quartos e Closets",
     imagem: "/images/ambientes/quarto.jpg",
-    alt: "Quarto planejado com closet integrado em marcenaria de alto padrao",
+    alt: "Quarto planejado com closet integrado em marcenaria de alto padrão",
   },
   {
     nome: "Salas de Estar",
@@ -27,9 +27,9 @@ const AMBIENTES = [
     alt: "Banheiro com marcenaria planejada e acabamento premium",
   },
   {
-    nome: "Area Gourmet",
+    nome: "Área Gourmet",
     imagem: "/images/ambientes/gourmet.jpg",
-    alt: "Area gourmet planejada com bancada e armarios em madeira",
+    alt: "Área gourmet planejada com bancada e armarios em madeira",
   },
 ];
 

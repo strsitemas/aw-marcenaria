@@ -58,7 +58,7 @@ export default async function DepoimentosListPage() {
                     {depoimento.notaEstrelas} / 5
                   </td>
                   <td className="font-texto text-sm text-madeira px-4 py-3">
-                    {depoimento.videoUrl ? "Sim" : "Nao"}
+                    {depoimento.videoUrl ? "Sim" : "Não"}
                   </td>
                   <td className="px-4 py-3">
                     <span

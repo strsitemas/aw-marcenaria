@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 const rotulosStatus = {
   NOVO: "Novo",
   EM_CONTATO: "Em contato",
-  ORCAMENTO_ENVIADO: "Orcamento enviado",
+  ORCAMENTO_ENVIADO: "Orçamento enviado",
   FECHADO: "Fechado",
   PERDIDO: "Perdido",
 };

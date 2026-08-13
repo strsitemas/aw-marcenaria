@@ -3,7 +3,7 @@ import Image from "next/image";
 const LINKS = [
   { nome: "Sobre", href: "/#sobre" },
   { nome: "Ambientes", href: "/#ambientes" },
-  { nome: "Portfolio", href: "/#portfolio" },
+  { nome: "Portfólio", href: "/#portfolio" },
   { nome: "Processo", href: "/#processo" },
   { nome: "Depoimentos", href: "/#depoimentos" },
   { nome: "FAQ", href: "/#faq" },
@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <Image
                 src="/images/logo/simbolo-aw.jpg"
-                alt="AW Marcenaria e Moveis Planejados"
+                alt="AW Marcenaria e Móveis Planejados"
                 width={40}
                 height={28}
                 className="rounded-sm"
@@ -33,15 +33,15 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-texto text-bege/70 text-sm leading-relaxed">
-              Marcenaria e moveis planejados de alto padrao. Design,
+              Marcenaria e móveis planejados de alto padrão. Design,
               qualidade e exclusividade em cada projeto.
             </p>
           </div>
 
-          {/* Links de navegacao */}
+          {/* Links de navegação */}
           <div>
             <h3 className="font-texto text-dourado text-sm uppercase tracking-widest mb-4">
-              Navegacao
+              Navegação
             </h3>
             <nav className="flex flex-col gap-2">
               {LINKS.map((link) => (
@@ -62,7 +62,7 @@ export default function Footer() {
               Contato
             </h3>
             <p className="font-texto text-bege/70 text-sm leading-relaxed">
-              Preencha o formulario ou chame no WhatsApp para solicitar seu
+              Preencha o formulário ou chame no WhatsApp para solicitar seu
               projeto sob medida.
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function Footer() {
         {/* Linha de creditos */}
         <div className="mt-12 pt-6 border-t border-dourado/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-texto text-bege/60 text-xs">
-            &copy; {anoAtual} AW Marcenaria e Moveis Planejados. Todos os direitos
+            &copy; {anoAtual} AW Marcenaria e Móveis Planejados. Todos os direitos
             reservados.
           </p>
           <p className="font-texto text-bege/60 text-xs">

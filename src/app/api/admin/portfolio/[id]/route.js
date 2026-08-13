@@ -18,7 +18,7 @@ const portfolioSchema = z.object({
 export async function PUT(request, { params }) {
   const session = await getServerSession(authOptions);
   if (!session) {
-    return NextResponse.json({ erro: "Nao autorizado" }, { status: 401 });
+    return NextResponse.json({ erro: "Não autorizado" }, { status: 401 });
   }
 
   try {
@@ -39,7 +39,7 @@ export async function PUT(request, { params }) {
     }
     if (error.code === "P2002") {
       return NextResponse.json(
-        { erro: "Ja existe um projeto com esse slug" },
+        { erro: "Já existe um projeto com esse slug" },
         { status: 409 }
       );
     }
@@ -51,7 +51,7 @@ export async function PUT(request, { params }) {
 export async function DELETE(request, { params }) {
   const session = await getServerSession(authOptions);
   if (!session) {
-    return NextResponse.json({ erro: "Nao autorizado" }, { status: 401 });
+    return NextResponse.json({ erro: "Não autorizado" }, { status: 401 });
   }
 
   try {

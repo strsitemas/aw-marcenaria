@@ -62,7 +62,7 @@ export default function PortfolioGaleria({ projetos }) {
             ) : (
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="font-texto text-xs text-branco-gelo/40 uppercase tracking-widest">
-                  Imagem indisponivel
+                  Imagem indisponível
                 </span>
               </div>
             )}

@@ -7,12 +7,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
 const ambienteSchema = z.object({
-  titulo: z.string().min(2, "Informe o titulo"),
+  titulo: z.string().min(2, "Informe o título"),
   slug: z
     .string()
     .min(2, "Informe o slug")
     .regex(/^[a-z0-9-]+$/, "Use apenas letras minusculas, numeros e hifen"),
-  descricao: z.string().min(5, "Informe a descricao"),
+  descricao: z.string().min(5, "Informe a descrição"),
   imagemCapa: z.string().min(1, "Informe o caminho da imagem"),
   ordem: z.coerce.number().int().default(0),
   publicado: z.boolean().default(true),
@@ -67,7 +67,7 @@ export default function AmbienteForm({ ambiente }) {
       router.push("/admin/ambientes");
       router.refresh();
     } catch (error) {
-      setErro("Nao foi possivel salvar. Tente novamente.");
+      setErro("Não foi possivel salvar. Tente novamente.");
     }
   }
 
@@ -135,7 +135,7 @@ export default function AmbienteForm({ ambiente }) {
         />
         <p className="text-xs text-madeira/70 mt-1">
           Copie a foto para public/images/ambientes/ e informe o caminho
-          aqui (upload direto ainda nao esta disponivel).
+          aqui (upload direto ainda não esta disponivel).
         </p>
         {errors.imagemCapa && (
           <p className="text-sm text-red-700 mt-1">

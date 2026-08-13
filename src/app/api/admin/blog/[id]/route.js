@@ -21,7 +21,7 @@ const postSchema = z.object({
 export async function PUT(request, { params }) {
   const session = await getServerSession(authOptions);
   if (!session) {
-    return NextResponse.json({ erro: "Nao autorizado" }, { status: 401 });
+    return NextResponse.json({ erro: "Não autorizado" }, { status: 401 });
   }
 
   try {
@@ -31,7 +31,7 @@ export async function PUT(request, { params }) {
 
     const existente = await prisma.postBlog.findUnique({ where: { id } });
     if (!existente) {
-      return NextResponse.json({ erro: "Post nao encontrado" }, { status: 404 });
+      return NextResponse.json({ erro: "Post não encontrado" }, { status: 404 });
     }
 
     const publicadoEm = dados.publicado
@@ -52,7 +52,7 @@ export async function PUT(request, { params }) {
     }
     if (error.code === "P2002") {
       return NextResponse.json(
-        { erro: "Ja existe um post com esse slug" },
+        { erro: "Já existe um post com esse slug" },
         { status: 409 }
       );
     }
@@ -64,7 +64,7 @@ export async function PUT(request, { params }) {
 export async function DELETE(request, { params }) {
   const session = await getServerSession(authOptions);
   if (!session) {
-    return NextResponse.json({ erro: "Nao autorizado" }, { status: 401 });
+    return NextResponse.json({ erro: "Não autorizado" }, { status: 401 });
   }
 
   try {

@@ -7,12 +7,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 
 const portfolioSchema = z.object({
-  titulo: z.string().min(2, "Informe o titulo"),
+  titulo: z.string().min(2, "Informe o título"),
   slug: z
     .string()
     .min(2, "Informe o slug")
     .regex(/^[a-z0-9-]+$/, "Use apenas letras minusculas, numeros e hifen"),
-  descricao: z.string().min(5, "Informe a descricao"),
+  descricao: z.string().min(5, "Informe a descrição"),
   categoria: z.string().min(2, "Informe a categoria"),
   imagemCapa: z.string().min(1, "Informe o caminho da imagem de capa"),
   imagensGaleriaTexto: z.string().optional(),
@@ -92,7 +92,7 @@ export default function PortfolioForm({ projeto }) {
       router.push("/admin/portfolio");
       router.refresh();
     } catch (error) {
-      setErro("Nao foi possivel salvar. Tente novamente.");
+      setErro("Não foi possivel salvar. Tente novamente.");
     }
   }
 
@@ -138,7 +138,7 @@ export default function PortfolioForm({ projeto }) {
         </label>
         <input
           type="text"
-          placeholder="Cozinhas, Quartos, Salas, Escritorios..."
+          placeholder="Cozinhas, Quartos, Salas, Escritórios..."
           {...register("categoria")}
           className="w-full rounded-md border border-madeira/30 bg-white px-4 py-3 font-texto text-preto-fosco focus:outline-none focus:border-dourado"
         />

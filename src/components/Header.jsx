@@ -6,10 +6,10 @@ import Link from "next/link";
 const LINKS = [
   { nome: "Sobre", href: "/#sobre" },
   { nome: "Ambientes", href: "/#ambientes" },
-  { nome: "Portfolio", href: "/#portfolio" },
-  { nome: "Processo", href: "/#processo" },
+  { nome: "Portfólio", href: "/#portfolio" },
+  { nome: "Processo", href: "/processo" },
   { nome: "Depoimentos", href: "/#depoimentos" },
-  { nome: "Blog", href: "/blog", pagina: true },
+  { nome: "Blog", href: "/blog", página: true },
   { nome: "Contato", href: "/#contato" },
 ];
 
@@ -35,7 +35,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/logo/simbolo-aw.jpg"
-            alt="AW Marcenaria e Moveis Planejados"
+            alt="AW Marcenaria e Móveis Planejados"
             width={44}
             height={31}
             className="rounded-sm"
@@ -67,7 +67,7 @@ export default function Header() {
             )
           )}
         </nav>
-        {/* Botao menu mobile */}
+        {/* Botão menu mobile */}
         <button
           type="button"
           onClick={() => setMenuAberto((v) => !v)}

@@ -10,7 +10,7 @@ function HeroConteudo({ titulo, subtitulo, linkBotao, textoBotao }) {
   return (
     <div className="relative z-10 text-center px-6 max-w-3xl swiper-no-swiping">
       <p className="font-texto text-dourado tracking-[0.3em] text-sm uppercase mb-4">
-        Marcenaria e Moveis Planejados
+        Marcenaria e Móveis Planejados
       </p>
       <h1 className="font-titulo text-4xl md:text-6xl text-branco-gelo leading-tight mb-6">
         {titulo}
@@ -31,7 +31,7 @@ function HeroConteudo({ titulo, subtitulo, linkBotao, textoBotao }) {
           href="#ambientes"
           className="rounded-md border border-dourado/40 text-branco-gelo font-texto px-8 py-3 hover:border-dourado transition"
         >
-          Conheca nossos ambientes
+          Conheça nossos ambientes
         </a>
       </div>
     </div>
@@ -48,10 +48,10 @@ export default function Hero({ banners = [] }) {
           titulo={
             <>
               Ambientes que refletem
-              <span className="block text-dourado">quem voce e</span>
+              <span className="block text-dourado">quem você e</span>
             </>
           }
-          subtitulo="Projetos exclusivos de marcenaria planejada: do conceito a instalacao, com acabamento impecavel e atendimento personalizado do inicio ao fim."
+          subtitulo="Projetos exclusivos de marcenaria planejada: do conceito a instalação, com acabamento impecável e atendimento personalizado do início ao fim."
           linkBotao="#contato"
           textoBotao="Solicite um Projeto"
         />

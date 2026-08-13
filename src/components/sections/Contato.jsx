@@ -19,7 +19,7 @@ const AMBIENTES_OPCOES = [
   "Sala",
   "Home Office",
   "Banheiro",
-  "Area Gourmet",
+  "Área Gourmet",
   "Outro",
 ];
 
@@ -74,7 +74,7 @@ export default function Contato() {
             Vamos planejar o seu projeto
           </h2>
           <p className="font-texto text-madeira mt-4">
-            Preencha o formulario abaixo e nossa equipe entra em contato para
+            Preencha o formulário abaixo e nossa equipe entra em contato para
             entender seu projeto e agendar uma visita.
           </p>
         </div>
@@ -192,7 +192,7 @@ export default function Contato() {
 
             {erroEnvio && (
               <p className="text-sm text-red-700">
-                Nao foi possivel enviar agora. Tente novamente ou chame no
+                Não foi possivel enviar agora. Tente novamente ou chame no
                 WhatsApp abaixo.
               </p>
             )}

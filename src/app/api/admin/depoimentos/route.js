@@ -15,7 +15,7 @@ const depoimentoSchema = z.object({
 export async function POST(request) {
   const session = await getServerSession(authOptions);
   if (!session) {
-    return NextResponse.json({ erro: "Nao autorizado" }, { status: 401 });
+    return NextResponse.json({ erro: "Não autorizado" }, { status: 401 });
   }
 
   try {
