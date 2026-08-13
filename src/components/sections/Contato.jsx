@@ -64,7 +64,7 @@ export default function Contato() {
     >
       <div className="mx-auto max-w-2xl px-6 md:px-8">
         <div className="mb-12 text-center">
-          <span className="font-texto text-dourado tracking-[0.3em] text-sm uppercase">
+          <span className="font-texto text-dourado-escuro tracking-[0.3em] text-sm uppercase">
             Contato
           </span>
           <h2
@@ -213,7 +213,7 @@ export default function Contato() {
               href={`https://wa.me/${numeroWhatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-texto text-dourado underline underline-offset-4 hover:text-dourado-claro transition"
+              className="font-texto text-dourado-escuro underline underline-offset-4 hover:text-dourado-claro transition"
             >
               Prefere falar direto? Chama no WhatsApp
             </a>

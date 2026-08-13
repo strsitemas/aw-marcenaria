@@ -1,12 +1,10 @@
 import { prisma } from "@/lib/prisma";
 import PortfolioGaleria from "./PortfolioGaleria";
-
 export default async function Portfolio() {
   const projetos = await prisma.projetoPortfolio.findMany({
     where: { publicado: true },
     orderBy: [{ destaque: "desc" }, { criadoEm: "desc" }],
   });
-
   return (
     <section
       id="portfolio"
@@ -15,7 +13,7 @@ export default async function Portfolio() {
     >
       <div className="mx-auto max-w-6xl px-6 md:px-8">
         <div className="mb-10 text-center">
-          <span className="font-texto text-dourado tracking-[0.3em] text-sm uppercase">
+          <span className="font-texto text-dourado-escuro tracking-[0.3em] text-sm uppercase">
             Portfolio
           </span>
           <h2
@@ -25,7 +23,6 @@ export default async function Portfolio() {
             Projetos que ja entregamos
           </h2>
         </div>
-
         <PortfolioGaleria projetos={projetos} />
       </div>
     </section>

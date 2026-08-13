@@ -12,6 +12,7 @@ module.exports = {
         madeira: "#3B2A1E",
         dourado: "#C9A24B",
         "dourado-claro": "#E4C77E",
+        "dourado-escuro": "#7A5D24",
         bege: "#E8DFCF",
         "branco-gelo": "#F5F3EE",
       },

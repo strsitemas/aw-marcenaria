@@ -70,11 +70,11 @@ export default function Footer() {
 
         {/* Linha de creditos */}
         <div className="mt-12 pt-6 border-t border-dourado/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-texto text-bege/50 text-xs">
+          <p className="font-texto text-bege/60 text-xs">
             &copy; {anoAtual} AW Marcenaria e Moveis Planejados. Todos os direitos
             reservados.
           </p>
-          <p className="font-texto text-bege/40 text-xs">
+          <p className="font-texto text-bege/60 text-xs">
             Desenvolvido por{" "}
             <a
               href="https://strsoftware.com.br"

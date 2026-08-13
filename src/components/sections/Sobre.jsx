@@ -24,7 +24,7 @@ export default function Sobre() {
 
         {/* Texto */}
         <div className="flex flex-col gap-6">
-          <span className="font-texto text-dourado tracking-[0.3em] text-sm uppercase">
+          <span className="font-texto text-dourado-escuro tracking-[0.3em] text-sm uppercase">
             Sobre a AW
           </span>
 

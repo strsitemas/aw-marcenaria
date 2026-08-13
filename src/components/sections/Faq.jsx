@@ -34,7 +34,7 @@ export default async function Faq() {
       />
       <div className="mx-auto max-w-3xl px-6 md:px-8">
         <div className="mb-14 text-center">
-          <span className="font-texto text-dourado tracking-[0.3em] text-sm uppercase">
+          <span className="font-texto text-dourado-escuro tracking-[0.3em] text-sm uppercase">
             Duvidas frequentes
           </span>
           <h2
